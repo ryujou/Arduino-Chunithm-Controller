@@ -36,7 +36,6 @@ void setup() {//初始化函数
 
   if (TouchSetup()) {
     AirSetup();
-    BtnSetup();
     NKROKeyboard.begin();//正式开始
     fill_solid(leds, NUM_LEDS, orange);
     FastLED.show();
@@ -63,9 +62,7 @@ void loop() {
 
   SetLed();
   AirCheck();
-  BtnCheck();
 }
-
 
 void LedSetup() {//LED初始化
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
@@ -95,14 +92,10 @@ bool TouchSetup() {//触摸初始化
 }
 
 void AirSetup() {//AIR初始化
-  DDRB  &= B11000001;
-  PORTB |= B00111110;
+  DDRB  &= B10000001;
+  PORTB |= B01111110;
 }
 
-void BtnSetup() {//按钮初始化
-  DDRF  &= B00001111;
-  PORTF |= B11110000;
-}
 
 void MprCheck() {
   CurrTA = mprA.touched();//mprA 检测部分
