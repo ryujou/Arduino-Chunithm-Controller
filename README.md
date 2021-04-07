@@ -1,6 +1,6 @@
 # Arduino-Chunithm-Controller
 使用 Arduino + mpr121 + WS2812B 制作的 Chunithm 控制器。
-使用了Sucareto/Arduino-Chunithm-Controller（https://github.com/Sucareto/Arduino-Chunithm-Controller）
+使用了Sucareto/Arduino-Chunithm-Controller（https://github.com/Sucareto/Arduino-Chunithm-Controller)
 的固件
 
 #### 原理：  
