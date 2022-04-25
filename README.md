@@ -18,5 +18,5 @@
 缩小了PCB体积将键盘拆分成四块一样的10x10cmPCB，可以使用嘉立创的5块钱打样和捷配的免费打样
 增加了LM393DT作为比较器和电位器调节光电管输入
 
-#### PCB地址：
-https://lceda.cn/ryujou/chunithm (已打样验证）
+#### PCB：
+见Hardware，直接导入立创eda即可
